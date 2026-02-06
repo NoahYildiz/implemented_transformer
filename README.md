@@ -1,4 +1,4 @@
-# Transformer2
+# Implementing Transformer
 
 Einfache, saubere Transformer-Implementierung exakt nach **"Attention is All You Need"** (Vaswani et al., 2017).
 
@@ -15,15 +15,6 @@ Standardwerte entsprechen dem Originalpaper:
 | dropout | 0.1 |
 | Label Smoothing | 0.1 |
 
-## Features
-
-- ✅ Sinusoidal Positional Encoding
-- ✅ BPE Tokenizer mit JSON save/load
-- ✅ Korrekte Padding- und Causal-Masken
-- ✅ Shared Embeddings (Encoder/Decoder + Output)
-- ✅ Warmup Learning Rate Schedule
-- ✅ WandB Logging
-- ✅ Validierung alle N Steps mit Beispielen
 
 ## Dateien
 
@@ -86,3 +77,12 @@ tokenizer = BPETokenizer.load_or_train("tokenizer.json", texts, vocab_size=32000
 - `val/loss` - Validation Loss alle 5000 Steps
 - `epoch/train_loss` - Durchschnittlicher Training Loss pro Epoche
 - `epoch/val_loss` - Validation Loss am Epochenende
+
+
+## Kurze Info: Dieses Repo wurde im Laufe des Implementing Transformers Modul an der HHU entwickelt.
+## Ein vollständiger Trainingsrun mit der base config auf einer H100er hat ca. 5 Stunden gedauert.
+
+
+
+
+
