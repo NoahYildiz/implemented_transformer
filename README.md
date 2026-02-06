@@ -1,7 +1,5 @@
 # Implementing Transformer
 
-Einfache, saubere Transformer-Implementierung exakt nach **"Attention is All You Need"** (Vaswani et al., 2017).
-
 ## Architektur
 
 Standardwerte entsprechen dem Originalpaper:
