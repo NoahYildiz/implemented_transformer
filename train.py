@@ -378,7 +378,7 @@ def main():
         warmup_steps=config.warmup_steps
     )
     
-    # Loss with label smoothing, ignoring padding (-100)
+    
     criterion = nn.CrossEntropyLoss(
         ignore_index=-100,
         label_smoothing=config.label_smoothing
